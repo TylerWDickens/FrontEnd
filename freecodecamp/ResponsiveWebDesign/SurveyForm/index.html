@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="title"> Laura Update Form </h1>
+    <p id="description"> Thank you for taking the time to share your status. Please keep in mind there are no wrong answers!</p>
+  </header>
+
+<div class="container">
+
+<form id="survey-form" action="index.html" method="post">
+  <label class="info-label" id="name-label"> Name </label><br>
+  <input class="input-txt" type="text" id="name" placeholder="Enter your full name here:" required="true"><br><br>
+
+  <label class="info-label" id="email-label"> Email </label><br>
+  <input class="input-txt" id="email" type="email" placeholder="Enter your email here:" required="true"><br><br>
+
+  <label class="info-label" id="number-label"> Rate your status 1-10: </label><br>
+  <input id="number" min="1" max="10" type="number" placeholder="1-10" required="true"><br><br>
+
+  <label class="info-label" id="feeling-label"> How are you feeling today? </label><br>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Happy" value="Happy">
+<label class="feeling-label" for="Happy">Happy</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Excited" value="Excited">
+<label class="feeling-label" for="Excited"> Excited</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Optimistic" value="Optimistic">
+<label class="feeling-label" for="Optimistic"> Optimistic</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Loving" value="Loving">
+<label class="feeling-label" for="Loving"> Loving</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Giddy" value="Giddy">
+<label class="feeling-label" for="Giddy"> Giddy</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Horny" value="Horny">
+<label class="feeling-label" for="Horny"> Horny</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Nervous" value="Nervous">
+<label class="feeling-label" for="Nervous" > Nervous</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="pissedoff" value="pissedoff">
+<label class="feeling-label" for="pissedoff" >Pissed off</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Worried" value="Worried">
+<label class="feeling-label" for="Worried" >Worried</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Tired" value="tired">
+<label class="feeling-label" for="Tired" >Tired</label>
+</span>
+
+<span style="white-space: nowrap;">
+<input type="checkbox" class="checkbox" id="Sad" value="sad">
+<label class="feeling-label" for="Sad" >Sad</label><br><br>
+</span>
+
+
+<label for="drop-down" class="info-label">Overall today was a ___ day.</label><br>
+  <select id="dropdown" required="true">
+    <option value="Amazing">Amazing</option>
+      <option value="Good">Good</option>
+    <option value="Ok">Ok</option>
+    <option value="Not great">Not great</option>
+    <option value="Shitty">Shitty</option>
+    <option value="Awful">Awful</option>
+  </select>
+
+<br><br><label for="radio" class="info-label">How is Tyler Doing?</label><br>
+  <input name="radio" type="radio" class="radio" value="Great">
+  <label class="rating-label" for="Great"> Great</label>
+
+  <input name="radio" type="radio" class="radio" value="OK">
+  <label class="rating-label" for="OK"> OK</label>
+
+  <input name="radio" type="radio" class="radio" value="Needs-Improvement">
+  <label class="rating-label" for="Needs-Improvement"> Needs Improvement</label>
+
+<br><br><label for="comment" class="info-label">Anything else you have on your mind?</label><br>
+<textarea form="survey-form" name="comment" id="comment" value="comment" placeholder="Enter text here... Love you!"></textarea>
+
+<br><br>
+
+  <input type="submit" id="submit" value="Submit Form!" onclick="Thank you for your input!"></input>
+</form>
+
+
+
+
+    <div class="col"></div>
+  </div>
+<body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

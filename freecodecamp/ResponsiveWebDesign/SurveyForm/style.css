@@ -1,0 +1,108 @@
+
+body {
+
+  background: linear-gradient(to bottom right, #d9e012 0%, #ffccff 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">;
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+#title {
+
+  text-align: center;
+  padding-top: 10px;
+
+}
+#description {
+
+  text-align: center;
+
+}
+
+#dropdown {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.info-label {
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width = auto;
+  padding-left: 5px;
+}
+
+.feeling-label{
+  color: #22200 ;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 5px;
+
+}
+
+input[type=number]{
+    width: 50px;
+}
+
+#number{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.input-txt{
+  margin-top: 5px;
+  width:95%;
+  max-width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container{
+  max-width: none;
+  margin: 0 auto;
+  width: 40vw;
+  background: rgba(125,125,125,.50);
+  border-radius: 70;
+  
+}
+
+.checkbox {
+  margin-top: 5px;
+
+}
+
+.header {
+  background: rgba(125,125,125,.5);
+  font-size: 16px;
+  margin:auto;
+}
+
+.radio {
+  color: #22200 ;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+textarea {
+  border: 1px solid #888;
+  font-family: Roboto;
+  width:95%;
+  max-width: 100%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.rating-label{
+  color: #22200 ;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 5px;
+}
