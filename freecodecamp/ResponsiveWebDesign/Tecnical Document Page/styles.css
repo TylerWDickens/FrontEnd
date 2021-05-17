@@ -1,0 +1,140 @@
+:root {
+  font-size: 16px;
+  font-family: helvetica;
+  --text-primary: #DEDEDE;
+  --text-secondary: #555560;
+  --bg-primary: #555560;
+  --bg-secondary: #DEDEDE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1500px;
+  width: calc(100vw-240px);
+  height: 100vh;
+  margin: 0 auto;
+  left: 225px;
+  overflow: scroll;
+  position: fixed;
+  flex-wrap: wrap;
+}
+
+nav {
+  position: fixed;
+  height: 100vh;
+  width: 210px;
+  background: rgba(75, 75, 75, 0.9);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: LightGray;
+}
+
+h2 {
+  color: rgba(75, 75, 75);
+  padding-bottom: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-left: none;
+  border-right: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu li {
+  padding: 0;
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 1rem;
+}
+
+code {
+  display: block;
+  height: 3rem;
+  width: auto;
+  vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(75, 75, 75, .3)
+}
+
+/*.main-section{
+  width: 80vw;
+  float: right;
+}*/
+#Documentation {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+  #navbar{
+    display: none;
+  }
+  .container {
+    max-width: 1500px;
+    width: 100vw;
+    height: 100vh;
+    margin: 5px;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
+    flex-wrap: wrap;
+  }
+
+}
+  /*nav {
+    position: fixed;
+    height: 200px;
+    width: 100vw;
+    background: rgba(75, 75, 75, 0.9);
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+  }
+
+  .container {
+    max-width: 1500px;
+    width: 100vw;
+    height: calc(100vh-225px);
+    margin: 5px;
+    overflow: scroll;
+    position: fixed;
+    flex-wrap: wrap;
+    left: 0;
+    bottom: 200px;
+  }
+
+  .menu li a {
+    display: block;
+    height: 1.5rem;
+    text-align: center;
+    vertical-align: baseline;
+    padding-top: 1rem;
+    width: 100vw;
+  }
+
+  #Documentation {
+    display: none;
+  }
+}

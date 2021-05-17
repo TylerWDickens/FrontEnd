@@ -1,0 +1,150 @@
+:root{
+  font-size: 16px;
+  font-family: avenir, helvetica;
+  --text-primary: #DEDEDE;
+  --text-secondary: #555560;
+  --bg-primary: #555560;
+  --bg-secondary: #DEDEDE;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  max-width: 10000px;
+  width: 100vw;
+  margin: 0 auto;
+  height: 100vh;
+  position: static;
+  flex: 1;
+}
+
+
+h1{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  height: 3rem;
+  width: 100vw;
+  background-color: DodgerBlue;
+  top: 0;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 5%;
+}
+
+
+.Logo{
+  margin-right: auto;
+  background-color: var(--bg-primary);
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  font-family: Courier New;
+}
+
+
+footer{
+    position: fixed;
+    display: flex;
+    height: 3rem;
+    width: 100vw;
+    background-color: DodgerBlue;
+    bottom: 0;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+
+a{
+  text-decoration: none;
+  margin-right: 1rem;
+  color: var(--text-primary);
+  font-weight: bolder;
+}
+
+
+#welcome-section{
+  display: flex;
+  top: 2rem;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  background: rgb(50,50,50);
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.project-tile{
+  display: grid;
+  grid-column-gap: 100px;
+  grid-row-gap: 100px;
+  border-style: solid;
+  border-width: medium;
+  border-color: Gray;
+  background-color: DodgerBlue;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+#projects{
+  display: grid;
+  /**top: calc(2rem+500px);**/
+  height: 500px;
+  width: 100vw;
+  background: rgb(100,100,100);
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  text-align: center;
+  grid-template-areas:
+  "a a a b b b c c c"
+
+}
+
+#pt1{
+  grid-area: a;
+}
+
+#pt2{
+  grid-area: b;
+}
+
+#pt3{
+  grid-area: c;
+}
+
+#Contact{
+  margin-right: auto;
+}
+
+
+footer{
+  color: var(--text-primary);
+}
+
+
+@media (max-width:600px) {
+
+  #welcome-section{
+
+    height: 50vh;
+
+
+  }
+
+}
